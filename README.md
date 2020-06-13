@@ -21,6 +21,15 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 
 | Problem | Code |
 |--|--|
+| Weird Algorithm | [C++](Introductory-Problems/Weird_Algorithm.cpp)|
+| Missing Number | [C++](Introductory-Problems/Missing_Number.cpp) |
+| Repetitions | [C++](Introductory-Problems/Repetitions.cpp) |
+| Increasing Array | [C++](Introductory-Problems/Increasing_Array.cpp) |
+| Permutations | [C++](Introductory-Problems/Permutations.cpp) |
+| Number Spiral | [C++](Introductory-Problems/Number_Spiral.cpp)* |
+| Two Knights | [C++](Introductory-Problems/Two_Knights.cpp) |
+
+
 
 
 
