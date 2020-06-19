@@ -1,82 +1,75 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-#define INF 1LL << 60
-#define int long long
-#define pii pair<int, int>
-#define deb(x) cout << #x << ": " << x << endl
+#define INF     1LL<<60
+#define int     long long
+#define pii     pair<int, int>
+#define deb(x)  cout << #x << ": " << x << endl
 
 const int N = 100005;
+const int MOD = 1e9+7;
 
 int n, m;
-int root, leaf;
-int par[N];
-bool vis[N], flag;
+bool cycle;
+int c_beg, c_end;
+vector<int> ans;
+int vis[N], par[N], lvl[N];
 vector<int> adj[N];
 
-void dfs(int u, int p) {
-    cout << u << " " << p << endl;
-    par[u] = p;
-    vis[u] = true;
-    for (int v : adj[u]) {
-        if (!vis[v])
-            dfs(v, u);
-        else {
-            root = v;
-            leaf = u;
-            flag = true;
-            return;
+bool dfs(int u, int dist) {
+    vis[u] = 1;
+    lvl[u] = dist;
+    for(int v: adj[u]) {
+        if(!vis[v]) {
+            par[v] = u;
+            if(dfs(v, dist + 1))
+                return true;
+        }
+        else if(v == par[u])
+            continue;
+        else if(vis[v] == 1 and (lvl[u] - lvl[v]) >= 2) {
+            c_beg = v;
+            c_end = u;
+            return true;
         }
     }
+    vis[u] = 2;
+    return false;
 }
 
-int32_t main()
-{
+int32_t main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 
-    flag = false;
-    memset(vis, false, sizeof(vis));
-    int i, u, v;
-    vector<int> ans;
+    int i, x, y;
+    c_beg = -1;
+    memset(vis, 0, sizeof(vis));
+    memset(lvl, 0, sizeof(lvl));
+    memset(par, -1, sizeof(par));
 
     cin >> n >> m;
-    for (i = 1; i <= n; i++) {
-        vis[i] = false;
-        adj[i].clear();
+    for(i = 0 ; i < m ; i++) {
+        cin >> x >> y;
+        adj[x].push_back(y);
+        adj[y].push_back(x);
     }
-    for (i = 0; i < m; i++) {
-        cin >> u >> v;
-        adj[u].push_back(v);
-        adj[v].push_back(u);
+
+    for(i = 1 ; i <= n ; i++) {
+        if(!vis[i])
+            if(dfs(i, 0))
+                break;
     }
-    for (i = 1; i <= n; i++) {
-        cout << i << " -> ";
-        for(int v: adj[i])
-            cout << v << " ";
-        cout << endl;
-    }
-    for (i = 1; i <= n; i++)
-    {
-        if (!vis[i])
-            dfs(i, -1);
-    }
-    if (!flag)
-    {
+    if(c_beg == -1) {
         cout << "IMPOSSIBLE\n";
         return 0;
     }
-    deb(root);
-    memset(vis, false, sizeof(vis));
-    dfs(root, -1);
-    ans.push_back(root);
-    while (leaf != root)
-    {
-        ans.push_back(leaf);
-        leaf = par[leaf];
+    ans.push_back(c_beg);
+    while(c_end != c_beg) {
+        ans.push_back(c_end);
+        c_end = par[c_end];
     }
+    ans.push_back(c_beg);
     cout << ans.size() << endl;
-    for (int v : ans)
-        cout << v << " ";
-    cout << endl;
+    for(int x: ans)
+        cout << x << " ";
     return 0;
 }

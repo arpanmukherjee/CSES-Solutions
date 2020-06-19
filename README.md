@@ -44,6 +44,9 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 
 | Problem | Code |
 |--|--|
+|  | [C++]() |
+|  | [C++]() |
+|  | [C++]() |
 
 
 
@@ -51,7 +54,12 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 
 | Problem | Code |
 |--|--|
-
+| Counting Rooms | [C++](Graph-Algorithms/Counting_Rooms.cpp) |
+| Labyrinth | [C++](Graph-Algorithms/Labyrinth.cpp) |
+| Building Roads | [C++](Graph-Algorithms/Building_Roads.cpp) |
+| Message Route | [C++](Graph-Algorithms/Message_Route.cpp) |
+| Building Teams | [C++](Graph-Algorithms/Building_Teams.cpp) |
+| Round Trip | [C++](Graph-Algorithms/Round_Trip.cpp) |
 
 
 ## Range Queries
