@@ -44,9 +44,8 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 
 | Problem | Code |
 |--|--|
-|  | [C++]() |
-|  | [C++]() |
-|  | [C++]() |
+| Dice Combinations | [C++](Dynamic-Programming/Dice_Combinations.cpp) |
+| Minimizing Coins | [C++](Dynamic-Programming/Minimizing_Coins.cpp) |
 
 
 
