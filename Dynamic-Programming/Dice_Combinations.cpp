@@ -6,7 +6,7 @@ using namespace std;
 #define pii     pair<int, int>
 #define deb(x)  cout << #x << ": " << x << endl
 
-const int N = 100005;
+const int N = 1000005;
 const int MOD = 1e9+7;
 
 int dp[N];
