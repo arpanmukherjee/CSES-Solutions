@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define INF     0x3f3f3f3f
+#define INF     1LL<<60
 #define int     long long
 #define pii     pair<int, int>
 #define deb(x)  cout << #x << ": " << x << endl

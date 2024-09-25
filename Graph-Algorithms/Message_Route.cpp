@@ -28,7 +28,7 @@ int32_t main() {
         adj[u].push_back(v);
         adj[v].push_back(u);
     }
-    
+
     par[1] = -1;
     vis[1] = true;
     q.push(make_pair(1, 1));
