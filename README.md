@@ -7,15 +7,17 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 
 ## Quick Links
 
-- [Introductory Problems](#introductor-problems)
-- [Sorting and Searching](#sorting-and-searching)
-- [Dynamic Programming](#dynamic-programming)
-- [Graph Algorithms](#graph-algorithms)
-- [Range Queries](#range-queries)
-- [Tree Algorithms](#tree-algorithms)
-- [Mathematics](#mathematics)
-- [String Algorithms](#string-algorithms)
-- [Additional Problems](#additional-problems)
+- [Data Structures and Algorithms](#data-structures-and-algorithms)
+  - [Quick Links](#quick-links)
+  - [Introductory Problems](#introductory-problems)
+  - [Sorting and Searching](#sorting-and-searching)
+  - [Dynamic Programming](#dynamic-programming)
+  - [Graph Algorithms](#graph-algorithms)
+  - [Range Queries](#range-queries)
+  - [Tree Algorithms](#tree-algorithms)
+  - [Mathematics](#mathematics)
+  - [String Algorithms](#string-algorithms)
+  - [Additional Problems](#additional-problems)
 
 ## Introductory Problems
 
@@ -72,6 +74,12 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 
 | Problem | Code |
 |--|--|
+| Subordinates | [C++](Tree-Algorithms/Subordinates.cpp) |
+| Tree Matching | [C++](Tree-Algorithms/Tree_Matching.cpp) |
+| Tree Diameter | [C++ (Using Tree DP)](Tree-Algorithms/Tree_Diameter_1.cpp) |
+| Tree Diameter | [C++ (Using BFS)](Tree-Algorithms/Tree_Diameter_2.cpp) |
+| Tree Distances I | [C++ (Using Tree DP)](Tree-Algorithms/Tree_Distances_I_1.cpp) |
+| Tree Distances I | [C++ (Using BFS)](Tree-Algorithms/Tree_Distances_I_2.cpp) |
 
 
 
