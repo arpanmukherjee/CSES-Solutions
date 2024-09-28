@@ -48,7 +48,11 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 |--|--|
 | Dice Combinations | [C++](Dynamic-Programming/Dice_Combinations.cpp) |
 | Minimizing Coins | [C++](Dynamic-Programming/Minimizing_Coins.cpp) |
-
+| Coin Combinations I | [C++](Dynamic-Programming/Coin_Combinations_I.cpp) |
+| Coin Combinations II | [C++](Dynamic-Programming/Coin_Combinations_II.cpp) |
+| Removing Digits | [C++](Dynamic-Programming/Removing_Digits.cpp) |
+| Grid Paths | [C++](Dynamic-Programming/Grid_Paths.cpp) |
+| Book Shop | [C++](Dynamic-Programming/Book_Shop.cpp) |
 
 
 ## Graph Algorithms
@@ -76,10 +80,8 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 |--|--|
 | Subordinates | [C++](Tree-Algorithms/Subordinates.cpp) |
 | Tree Matching | [C++](Tree-Algorithms/Tree_Matching.cpp) |
-| Tree Diameter | [C++ (Using Tree DP)](Tree-Algorithms/Tree_Diameter_1.cpp) |
-| Tree Diameter | [C++ (Using BFS)](Tree-Algorithms/Tree_Diameter_2.cpp) |
-| Tree Distances I | [C++ (Using Tree DP)](Tree-Algorithms/Tree_Distances_I_1.cpp) |
-| Tree Distances I | [C++ (Using BFS)](Tree-Algorithms/Tree_Distances_I_2.cpp) |
+| Tree Diameter | [C++ (Using Tree DP)](Tree-Algorithms/Tree_Diameter_1.cpp) <br> [C++ (Using BFS)](Tree-Algorithms/Tree_Diameter_2.cpp) |
+| Tree Distances I | [C++ (Using Tree DP)](Tree-Algorithms/Tree_Distances_I_1.cpp) <br> [C++ (Using BFS)](Tree-Algorithms/Tree_Distances_I_2.cpp) |
 
 
 
