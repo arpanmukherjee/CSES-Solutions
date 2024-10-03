@@ -1,3 +1,9 @@
+/**
+ * Problem Name: Repetitions
+ * Problem Link: https://cses.fi/problemset/task/1069
+ * Author: @arpn
+ */
+
 #include<bits/stdc++.h>
 using namespace std;
 

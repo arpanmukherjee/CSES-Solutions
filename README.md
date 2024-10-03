@@ -30,6 +30,10 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 | Permutations | [C++](Introductory-Problems/Permutations.cpp) |
 | Number Spiral | [C++](Introductory-Problems/Number_Spiral.cpp)* |
 | Two Knights | [C++](Introductory-Problems/Two_Knights.cpp) |
+| Two Sets | [C++](Introductory-Problems/Two_Sets.cpp) |
+| Bit Strings | [C++](Introductory-Problems/Bit_Strings.cpp) |
+| Trailing Zeros | [C++](Introductory-Problems/Trailing_Zeros.cpp) |
+
 
 
 
@@ -53,6 +57,8 @@ Following are the solutions solved by me for [CSES problemset](https://cses.fi/p
 | Removing Digits | [C++](Dynamic-Programming/Removing_Digits.cpp) |
 | Grid Paths | [C++](Dynamic-Programming/Grid_Paths.cpp) |
 | Book Shop | [C++](Dynamic-Programming/Book_Shop.cpp) |
+| Array Description | [C++ (Iterative)](Dynamic-Programming/Array_Description_Iterative.cpp) <br> [C++ (Recursive)](Dynamic-Programming/Array_Description_Recursive.cpp) |
+| Edit Distance | [C++](Dynamic-Programming/Edit_Distance.cpp) |
 
 
 ## Graph Algorithms

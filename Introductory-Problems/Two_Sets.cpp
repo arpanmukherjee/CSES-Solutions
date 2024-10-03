@@ -1,3 +1,9 @@
+/**
+ * Problem Name: Two Sets
+ * Problem Link: https://cses.fi/problemset/task/1092
+ * Author: @arpn
+ */
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -8,38 +14,40 @@ using namespace std;
 
 const int N = 10005;
 
+void printSet(unordered_set<int> s) {
+    cout << s.size() << endl;
+    for(int num: s)
+        cout << num << " ";
+    cout << endl;
+}
 
 int32_t main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 
-    int i, n, s1, s2, ans;
-    vector<int> a;
-    vector<int> b;
+    int n, sum;
     cin >> n;
-    ans = (n*(n+1)) / 2;
-    if(ans&1) {
-        cout << "NO\n";
+    sum = (n*(n+1)) / 2;
+    if(sum&1) {
+        cout << "NO" << endl;
         return 0;
     }
-    cout << "YES\n";
-    s1 = s2 = 0;
-    for(i = 1 ; i <= n ; i++) {
-        if(s1 <= s2) {
-            s1 += i;
-            a.push_back(i);
+
+    sum >>= 1;
+    unordered_set<int> s1, s2;
+    int ind = n;
+    while(ind) {
+        if(sum >= ind) {
+            s1.insert(ind);
+            sum -= ind;
+        } else {
+            s2.insert(ind);
         }
-        else {
-            s2 += i;
-            b.push_back(i);
-        }
+        ind--;
     }
-    cout << a.size() << endl;
-    for(int x: a)
-        cout << x << " ";
-    cout << endl;
-    cout << b.size() << endl;
-    for(int x: b)
-        cout << x << " ";
-    cout << endl;
+    cout << "YES" << endl;
+    printSet(s1);
+    printSet(s2);
     return 0;
 }
+
+

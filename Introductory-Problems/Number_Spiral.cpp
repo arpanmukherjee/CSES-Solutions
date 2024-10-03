@@ -1,3 +1,9 @@
+/**
+ * Problem Name: Number Spiral
+ * Problem Link: https://cses.fi/problemset/task/1071
+ * Author: @arpn
+ */
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -12,19 +18,20 @@ const int N = 100005;
 int32_t main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 
-    int t, x, y, ans;
+    int t, x, y, ans, add;
     cin >> t;
     while(t--) {
-        cin >> x >> y;
-        if(x == 1 and y == 1) {
-            cout << 1 << endl;
-            continue;
+        cin >> y >> x;
+
+        if(y > x) {
+            ans = (y-1) * (y-1);
+            add = (y&1) ? x : (y<<1)-x;
+        } else {
+            ans = (x-1) * (x-1);
+            add = (x&1) ? (x<<1)-y : y;
         }
-        if(x&1)
-            ans = ((x - 1) * (x - 1)) + 1;
-        else
-            ans = x * x;
-        cout << ans << endl;
+
+        cout << (ans+add) << endl;
     }
     return 0;
 }

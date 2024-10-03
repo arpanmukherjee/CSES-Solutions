@@ -1,6 +1,6 @@
 /**
- * Problem Name: Increasing Array
- * Problem Link: https://cses.fi/problemset/task/1094
+ * Problem Name: Bit Strings
+ * Problem Link: https://cses.fi/problemset/task/1617
  * Author: @arpn
  */
 
@@ -10,22 +10,21 @@ using namespace std;
 #define INF     1LL<<60
 #define int     long long
 #define pii     pair<int, int>
-#define deb(x)  cerr << #x << ": " << x << endl
+#define deb(x)  cout << #x << ": " << x << endl
 
-const int N = 100005;
+const int N = 1000005;
+const int MOD = 1e9+7;
 
 
 int32_t main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    int n, x, ans, temp;
+
+    int n, ans;
+    ans = 1L;
     cin >> n;
-    cin >> temp;
-    ans = 0;
-    n--;
     while(n--) {
-        cin >> x;
-        ans += max(0LL, temp - x);
-        temp = max(temp, x);
+        ans *= 2;
+        ans %= MOD;
     }
     cout << ans << endl;
     return 0;
